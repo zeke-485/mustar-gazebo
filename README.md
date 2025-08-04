@@ -5,8 +5,9 @@
 
 
 ## NOTE: THIS IS EXPERIMENTAL
-my setup is on WSL UBUNTU 20.04.06 LTS. there might difference on the outcomes. you may try running this setup on local or virtual-machine
+* my setup is on WSL UBUNTU 20.04.06 LTS. there might difference on the outcomes. you may try running this setup on local or virtual-machine
 This entire setup might need the entire workspace in order to make sure that the system is similar to your robot
+* this will update occasionally
 
 ### Suggestion
  * set the username as "mustar" ,dont forget to set up the password
