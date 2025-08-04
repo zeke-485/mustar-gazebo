@@ -36,7 +36,7 @@ dpkg -l | grep ^ii | grep ros-noetic | awk '{print $2}' > pc1.txt
 ## SETTING UP GAZEBO IN YOUR PC
 
 
-1. paste the copied catkin_ws workspace to your /home/user/ (ex. /home/mustar/)
+1. paste the copied files to your /home/user/ (ex. /home/mustar/)
 
 
 2. ignore the packages that is related to the hardware of the robot by creating CATKIN_IGNORE files.
