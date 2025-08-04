@@ -1,6 +1,10 @@
 # HOW TO SETUP GAZEBO SIMULATION OF JUPITERROBOT IN ANOTHER PC
 
-## THIS IS EXPERIMENTAL
+
+
+
+
+## NOTE: THIS IS EXPERIMENTAL
 my setup is on WSL UBUNTU 20.04.06 LTS. there might difference on the outcomes. you may try running this setup on local or virtual-machine
 This entire setup might need the entire workspace in order to make sure that the system is similar to your robot
 
@@ -110,18 +114,18 @@ roslaunch jupiterobot2_moveit_config demo.launch
 * the setup of your RVIZ might be different from your robot, you may try to setup your rviz again
 * IF THERE ARE STILL ERRORS DELETE catkin_ws folder and start over. else please search another method online
 
-GAZEBO SIMULATION:
+## GAZEBO SIMULATION:
 
 <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/eddad945-74c8-420f-93dc-e6478058c325" />
 
 
 
-MOVE-IT SIMULATION
+## MOVE-IT SIMULATION
 
 <img width="1367" height="945" alt="Image" src="https://github.com/user-attachments/assets/b6e50038-162e-4bda-9193-f426186eea1a" />
 
 
 
-NAVIGATION SLAM SIMULATION
+## NAVIGATION SLAM SIMULATION
 
 <img width="1207" height="1003" alt="Image" src="https://github.com/user-attachments/assets/fafb797e-b335-4231-a830-6cf696116a94" />
