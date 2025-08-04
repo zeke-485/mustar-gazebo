@@ -36,10 +36,10 @@ dpkg -l | grep ^ii | grep ros-noetic | awk '{print $2}' > pc1.txt
 ## SETTING UP GAZEBO IN YOUR PC
 
 
-1. paste the copied files to your /home/user/ (ex. /home/mustar/)
+### 1. paste the copied files to your /home/user/ (ex. /home/mustar/)
 
 
-2. ignore the packages that is related to the hardware of the robot by creating CATKIN_IGNORE files.
+### 2. ignore the packages that is related to the hardware of the robot by creating CATKIN_IGNORE files.
 
  * you may delete the CATKIN_IGNORE file if the packages is needed
  * you may add the touch CATKIN_IGNORE command to any of the package you don't need
@@ -52,14 +52,14 @@ touch ~/catkin_ws/src/jupiterobot2/jupiterobot2_arm/jupiterobot2_arm_bringup/CAT
 touch ~/catkin_ws/src/jupiterobot2/jupiterobot2_voice/jupiterobot2_voice_xf/CATKIN_IGNORE
 ```
 
-3. build the workspace
+### 3. build the workspace
 
 ```sh
 cd catkin_ws
 catkin_make
 ```
 
-4. install necessary ros-noetic packages. compare the packages from robot (pc1) and your pc (pc2)
+### 4. install necessary ros-noetic packages. compare the packages from robot (pc1) and your pc (pc2)
 
  * Make sure to create or paste pc1.txt first
  * open text pc2-detailed-installed-list.txt in /home/user/ if you want details of your packages
@@ -74,11 +74,11 @@ grep -v '\-dbgsym$' missing-pkg.txt > missing-pruned.txt
 #install packages from the list
 sudo apt install $(cat missing-pruned.txt)
 ```
-5. setup .bashrc
+### 5. setup .bashrc
 
  * you may refer to the uploaded .bashrc or the .bashrc from your robot
  
-6. launch gazebo
+### 6. launch gazebo
 
 
 ```sh
