@@ -87,7 +87,7 @@ roslaunch jupiterobot2_gazebo jupiterobot2_world.launch
 * bringup commmand is only needed on the physical robot. gazebo will launch all the necessary hardware based on urdf
 * LIDAR only scan when obstacles is presented
 * refer to FCOEE or jupiterrobot pdf for more commands
-* learn how to create room and obstacles in gazebo like this [this](https://classic.gazebosim.org/tutorials?tut=build_world)
+* learn how to create room and obstacles in gazebo like [this](https://classic.gazebosim.org/tutorials?tut=build_world)
 
 * Examples for commands of jupiterrobot:
   * SLAM MAP BUILDING
