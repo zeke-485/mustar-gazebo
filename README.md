@@ -113,7 +113,56 @@ roslaunch jupiterobot2_moveit_config demo.launch
 
 * the setup of your RVIZ might be different from your robot, you may try to setup your rviz again
 * IF THERE ARE STILL ERRORS DELETE catkin_ws folder and start over. else please search another method online
+* teleop joystick might not work properly as it need physical connection
 
+
+
+## TEST THE ARM MOVEMENT
+Try rostopic pub
+
+ * Move the arm
+```sh
+rostopic pub /arm_group_controller/command trajectory_msgs/JointTrajectory "header:
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+joint_names: ['arm1_joint', 'arm2_joint', 'arm3_joint', 'arm4_joint']
+points:
+- positions: [0.5, -0.5, 0.3, -0.3]
+  velocities: [0.0, 0.0, 0.0, 0.0]
+  accelerations: []
+  effort: []
+  time_from_start: {secs: 2, nsecs: 0}"
+
+```
+
+ * Move the gripper
+```sh
+rostopic pub /gripper_group_controller/command trajectory_msgs/JointTrajectory "header:
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+joint_names: ['gripper_joint']
+points:
+- positions: [0.3]
+  velocities: [0.0]
+  accelerations: []
+  effort: []
+  time_from_start: {secs: 1, nsecs: 0}"
+
+```
+
+ * Move the head
+```sh
+rostopic pub /head_group_controller/command trajectory_msgs/JointTrajectory "header:
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+joint_names: ['head_joint']
+points:
+- positions: [0.2]
+  velocities: [0.0]
+  accelerations: []
+  effort: []
+  time_from_start: {secs: 1, nsecs: 0}"
+```
 ## GAZEBO SIMULATION:
 
 <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/eddad945-74c8-420f-93dc-e6478058c325" />
