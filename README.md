@@ -13,7 +13,7 @@ This entire setup might need the entire workspace in order to make sure that the
  * copy the edited .bashrc file uploaded to your .bashrc in /home/mustar/
  * download the pc1.txt and paste to /home/mustar/ or recreate it in your robot. There might be differences of the packages from the uploaded pc1.txt
 
-## IMPORTNANT!!
+## IMPORTANT!!
 
  * install ROS NOETIC by following the instruction [here](https://wiki.ros.org/noetic/Installation/Ubuntu)
  * delete the CMakeList.txt in catkin_ws/src before setting up the workspace
