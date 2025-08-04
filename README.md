@@ -5,27 +5,27 @@ my setup is on WSL UBUNTU 20.04.06 LTS. there might difference on the outcomes. 
 This entire setup might need the entire workspace in order to make sure that the system is similar to your robot
 
 ### Suggestion
-* set the username as "mustar" ,dont forget to set up the password
-* copy the edited .bashrc file uploaded to your .bashrc in /home/mustar/
-* download the pc1.txt and paste to /home/mustar/ or recreate it in your robot. There might be differences of the packages from the uploaded pc1.txt
+ * set the username as "mustar" ,dont forget to set up the password
+ * copy the edited .bashrc file uploaded to your .bashrc in /home/mustar/
+ * download the pc1.txt and paste to /home/mustar/ or recreate it in your robot. There might be differences of the packages from the uploaded pc1.txt
 
 ### Important
 
-* install ROS NOETIC by following the instruction [here](https://wiki.ros.org/noetic/Installation/Ubuntu)
-* delete the CMakeList.txt in catkin_ws/src before setting up the workspace
+ * install ROS NOETIC by following the instruction [here](https://wiki.ros.org/noetic/Installation/Ubuntu)
+ * delete the CMakeList.txt in catkin_ws/src before setting up the workspace
 
 ## CLONING THE FILES FROM YOUR ROBOT
 
-* Copy the entire workspace in /home/mustar/ (ex. catkin_ws) from robot (pc1)
+ * Copy the entire workspace in /home/mustar/ (ex. catkin_ws) from robot (pc1)
 
-* Copy the .bashrc of the robot in /home/mustar/
+ * Copy the .bashrc of the robot in /home/mustar/
 
-* Create the list of installed ros-noetic packages in your robot
+ * Create the list of installed ros-noetic packages in your robot
 
 ```sh
 dpkg -l | grep ^ii | grep ros-noetic | awk '{print $2}' > pc1.txt
 ```
-* Copy pc1.txt as reference
+ * Copy pc1.txt as reference
 
 
 ## SETTING UP GAZEBO IN YOUR PC
@@ -36,8 +36,8 @@ dpkg -l | grep ^ii | grep ros-noetic | awk '{print $2}' > pc1.txt
 
 2. ignore the packages that is related to the hardware of the robot by creating CATKIN_IGNORE files.
 
-* you may delete the CATKIN_IGNORE file if the packages is needed
-* you may add the touch CATKIN_IGNORE command to any of the package you don't need
+ * you may delete the CATKIN_IGNORE file if the packages is needed
+ * you may add the touch CATKIN_IGNORE command to any of the package you don't need
 
 ```sh
 touch ~/catkin_ws/src/basic_function_packages/rbx1_dynamixels/CATKIN_IGNORE
@@ -56,8 +56,8 @@ catkin_make
 
 4. install necessary ros-noetic packages. compare the packages from robot (pc1) and your pc (pc2)
 
-* Make sure to create or paste pc1.txt first
-* open text pc2-detailed-installed-list.txt in /home/user/ if you want details of your packages
+ * Make sure to create or paste pc1.txt first
+ * open text pc2-detailed-installed-list.txt in /home/user/ if you want details of your packages
 
 ```sh
 #make list of installed packages in pc2 (your pc)
@@ -71,7 +71,7 @@ sudo apt install $(cat missing-pruned.txt)
 ```
 5. setup .bashrc
 
-* you may refer to the uploaded .bashrc or the .bashrc from your robot
+ * you may refer to the uploaded .bashrc or the .bashrc from your robot
  
 6. launch gazebo
 
@@ -112,9 +112,10 @@ roslaunch jupiterobot2_moveit_config demo.launch
 
 
 <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/eddad945-74c8-420f-93dc-e6478058c325" />
-
+GAZEBO SIMULATION
 
 <img width="1367" height="945" alt="Image" src="https://github.com/user-attachments/assets/b6e50038-162e-4bda-9193-f426186eea1a" />
-
+MOVE-IT SIMULATION
 
 <img width="1207" height="1003" alt="Image" src="https://github.com/user-attachments/assets/fafb797e-b335-4231-a830-6cf696116a94" />
+NAVIGATION SLAM SIMULATION
