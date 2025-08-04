@@ -110,12 +110,18 @@ roslaunch jupiterobot2_moveit_config demo.launch
 * the setup of your RVIZ might be different from your robot, you may try to setup your rviz again
 * IF THERE ARE STILL ERRORS DELETE catkin_ws folder and start over. else please search another method online
 
+GAZEBO SIMULATION:
 
 <img width="1920" height="1032" alt="Image" src="https://github.com/user-attachments/assets/eddad945-74c8-420f-93dc-e6478058c325" />
-GAZEBO SIMULATION
 
-<img width="1367" height="945" alt="Image" src="https://github.com/user-attachments/assets/b6e50038-162e-4bda-9193-f426186eea1a" />
+
+
 MOVE-IT SIMULATION
 
-<img width="1207" height="1003" alt="Image" src="https://github.com/user-attachments/assets/fafb797e-b335-4231-a830-6cf696116a94" />
+<img width="1367" height="945" alt="Image" src="https://github.com/user-attachments/assets/b6e50038-162e-4bda-9193-f426186eea1a" />
+
+
+
 NAVIGATION SLAM SIMULATION
+
+<img width="1207" height="1003" alt="Image" src="https://github.com/user-attachments/assets/fafb797e-b335-4231-a830-6cf696116a94" />
